@@ -13,7 +13,7 @@ exports.validateFormat = function (video) {
 exports.cropFile = async (video, width, height) => {
   try {
     if (width > height) {
-      height > width;
+      height = width;
     }
     let path = "/uploads/" + Date.now().toString() + video.name;
     Child_process.execSync(
